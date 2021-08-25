@@ -5,3 +5,111 @@
 body {
   background: #cecece;
 }
+nav ul {
+  margin: 0 auto;
+}
+nav span a {
+  text-decoration: none;
+}
+.carousel {
+  margin-top: 4em;
+}
+.carousel .container .row {
+  align-items: center;
+  padding: 0 3.5em;
+}
+#about-us {
+  margin: 5em auto;
+  text-align: center;
+  padding: 0 3em;
+}
+#about-us h4 {
+  font-size: medium;
+  color: #79690e;
+}
+#about-us h2 {
+  font-size: xx-large;
+  margin: 1.25rem 0;
+}
+#about-us p {
+  color: gray;
+}
+#volunteers-positions {
+  margin: 5em auto;
+  text-align: center;
+}
+#volunteers-positions h2 {
+  margin-bottom: 1.5em;
+}
+#volunteers-positions .box {
+  /* background-color: white; */
+  border-radius: 5px;
+  padding: 1em;
+}
+#volunteers-positions .box h3 {
+  color: #998200;
+}
+#volunteers-positions .box p {
+  color: gray;
+}
+#volunteers-positions .box p a {
+  text-decoration: none;
+  color: gray;
+}
+#our-programs {
+  margin: 5em auto;
+  text-align: center;
+}
+#our-programs .col-md-12 p {
+  width: 50%;
+  margin: 0 auto;
+}
+#our-programs .card {
+  margin-top: 2em;
+  background: transparent;
+  border: none;
+}
+#our-programs .card img {
+  border-radius: 15px;
+}
+#our-programs .card p {
+  width: 80%;
+  margin: 1em auto;
+}
+/* FOOTER */
+/* footer {
+  background: #fafafa;
+  padding: 2em;
+  padding-bottom: 0;
+
+  h4 {
+    margin-bottom: 1em;
+  }
+
+  p,
+  ul li {
+    font-size: large;
+
+    &.footer-links {
+      a {
+        text-decoration: none;
+        color: rgb(153, 130, 0);
+      }
+    }
+
+    &.address {
+      width: 60%;
+    }
+  }
+  ul li {
+    font-size: large;
+  }
+} */
+.copyright {
+  background: #e0e0e0;
+  padding: 1em;
+  padding-bottom: 0;
+}
+.copyright span {
+  color: #998200;
+}
