@@ -1,12 +1,26 @@
+@font-face {
+  font-family: 'Barlow';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/barlow/v5/7cHqv4kjgoGqM7E3p-kc4A.ttf) format('truetype');
+}
 * {
   padding: 0;
   margin: 0;
 }
 body {
-  background: #cecece;
+  font-family: "Barlow", sans-serif;
 }
 nav ul {
   margin: 0 auto;
+}
+nav ul li {
+  margin: 0 0.5em;
+  font-weight: 600;
+}
+nav span {
+  font-weight: 600;
 }
 nav span a {
   text-decoration: none;
@@ -18,21 +32,48 @@ nav span a {
   align-items: center;
   padding: 0 3.5em;
 }
+.carousel .container .row h1 {
+  font-size: 5em;
+  font-style: italic;
+  font-weight: 900;
+  margin-bottom: 0.35em;
+  text-shadow: 4px 4px 6px #969696;
+}
+.carousel .container .row p {
+  color: #666666;
+}
+.carousel .carousel-control-next,
+.carousel .carousel-control-prev {
+  width: 10%;
+}
+.carousel .carousel-control-next-icon,
+.carousel .carousel-control-prev-icon {
+  background-image: none;
+}
+.carousel .carousel-control-next-icon .fa-4x,
+.carousel .carousel-control-prev-icon .fa-4x {
+  color: gray;
+}
 #about-us {
   margin: 5em auto;
   text-align: center;
   padding: 0 3em;
 }
 #about-us h4 {
-  font-size: medium;
-  color: #79690e;
+  font-size: large;
+  color: #ff9f0d;
+  text-transform: uppercase;
+  font-weight: 600;
+  /* text-shadow: 4px 4px 6px rgba(150, 150, 150, 1); */
 }
 #about-us h2 {
-  font-size: xx-large;
+  font-size: 3em;
   margin: 1.25rem 0;
+  font-weight: 700;
+  text-shadow: 4px 4px 6px #969696;
 }
 #about-us p {
-  color: gray;
+  color: #666666;
 }
 #volunteers-positions {
   margin: 5em auto;
@@ -40,41 +81,66 @@ nav span a {
 }
 #volunteers-positions h2 {
   margin-bottom: 1.5em;
+  font-weight: 700;
+  font-size: 3em;
+  text-shadow: 4px 4px 6px #969696;
 }
 #volunteers-positions .box {
-  /* background-color: white; */
   border-radius: 5px;
   padding: 1em;
 }
 #volunteers-positions .box h3 {
-  color: #998200;
+  color: #ff9f0d;
+  font-weight: 600;
 }
 #volunteers-positions .box p {
-  color: gray;
+  color: #666666;
+}
+#volunteers-positions .box p i {
+  margin-right: 0.35em;
 }
 #volunteers-positions .box p a {
   text-decoration: none;
-  color: gray;
+  color: #666666;
 }
 #our-programs {
   margin: 5em auto;
   text-align: center;
 }
+#our-programs .col-md-12 h2 {
+  font-weight: 700;
+  font-size: 3em;
+  text-shadow: 4px 4px 6px #969696;
+}
 #our-programs .col-md-12 p {
   width: 50%;
   margin: 0 auto;
+  color: #666666;
 }
 #our-programs .card {
   margin-top: 2em;
   background: transparent;
   border: none;
+  border-radius: 0 15% 0 15%;
+  transition: all 0.5s ease;
+}
+#our-programs .card:hover {
+  background: white;
+  box-shadow: 0 0.5em 1em 0 rgba(0, 0, 0, 0.2);
+  transform: scale(1.05);
 }
 #our-programs .card img {
-  border-radius: 15px;
+  border-radius: 0 15% 0 15%;
+}
+#our-programs .card h5 {
+  color: #ff9f0d;
+  font-weight: 600;
+  text-shadow: 4px 4px 6px #969696;
 }
 #our-programs .card p {
   width: 80%;
   margin: 1em auto;
+  color: #666666;
 }
 /* FOOTER */
 /* footer {
@@ -112,4 +178,26 @@ nav span a {
 }
 .copyright span {
   color: #998200;
+}
+.copyright .aboc {
+  text-decoration: none;
+  color: #998200;
+}
+@media only screen and (max-width: 768px) {
+  .carousel .container .row h1 {
+    font-size: 2em;
+  }
+  .carousel-control-next-icon .fa-4x,
+  .carousel-control-prev-icon .fa-4x {
+    font-size: 2em;
+  }
+  #about-us h2 {
+    font-size: 2em;
+  }
+  #volunteers-positions h2 {
+    font-size: 2em;
+  }
+  #our-programs .col-md-12 h2 {
+    font-size: 2em;
+  }
 }
