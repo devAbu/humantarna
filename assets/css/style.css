@@ -209,8 +209,14 @@ nav span a {
   #about-us h2 {
     font-size: 2em;
   }
+  #volunteers-positions {
+    overflow: hidden;
+  }
   #volunteers-positions h2 {
     font-size: 2em;
+  }
+  #volunteers-positions img {
+    width: initial;
   }
   #our-programs .col-md-12 h2 {
     font-size: 2em;
