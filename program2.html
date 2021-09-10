@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ORALNO ZDRAVLJE</title>
+
+    <!-- BOOTSTRAP CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We"
+      crossorigin="anonymous"
+    />
+
+    <!-- CUSTOM CSS -->
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+  <body>
+    <!-- NAVBAR -->
+    <div class="container">
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="/">
+            <img src="./assets/images/logo.png" alt="Logo" width="250"
+          /></a>
+          <!-- <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button> -->
+          <!--<div class="collapse navbar-collapse" id="navbarSupportedContent">
+             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="/">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#about-us">About Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#volunteers-positions"
+                  >Volunteers Positions</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#our-programs">Our Programs</a>
+              </li>
+            </ul> -->
+          <span class="navbar-text">
+            <i class="fas fa-phone-alt"></i>
+            <a href="tel: +38762810018"> +387 62 810 018 </a>
+          </span>
+          <!-- </div> -->
+        </div>
+      </nav>
+    </div>
+
+    <!-- HERO -->
+    <div class="hero oralno">
+      <div class="hero-text">
+        <h1 style="font-size: 50px">ORALNO ZDRAVLJE</h1>
+      </div>
+    </div>
+
+    <!-- CONTENT -->
+    <div class="container">
+      <div class="row">
+        <div class="col-md-7">
+          <div class="program-img">
+            <img src="./assets/images/oralno-zdravlje-1.jpeg" alt="Program 1" />
+          </div>
+          <div class="program-text">
+            Povodom Svjetskog dana oralnog zdravlja koji se u cijelom svijetu
+            obilježava 20. Marta prigodnim i različitim aktivnostima, naše
+            udruženje je održalo radionicu na temu “Zdrav i blistav osmjeh” u
+            vrtićima u Sarajevu. Mališanima je kroz igru demonstrirana tehnika
+            pravilnog četkanja zuba, te ukazana važnost na pravilan odabir hrane
+            kako bi njihovi zubi bili blistavi, lijepi i zdravi.
+            <br /><br />
+            Cilj: Educirati djecu već od malih nogu o važnosti oralnog zdravlja.
+            <br /><br />
+            Rezultati: Svi prisutni su obučeni za samostalno održavanje oralne
+            higijene, te oslobođeni straha od stomatologa.
+          </div>
+
+          <div class="program-imgs">
+            <div class="row">
+              <div class="col-md-4">
+                <img
+                  src="./assets/images/oralno-zdravlje-2.jpeg"
+                  alt="Program 1"
+                  onclick="openModal();currentSlide(1)"
+                />
+              </div>
+              <div class="col-md-4">
+                <img
+                  src="./assets/images/oralno-zdravlje-3.jpeg"
+                  alt="Program 1"
+                  onclick="openModal();currentSlide(2)"
+                />
+              </div>
+              <div class="col-md-4">
+                <img
+                  src="./assets/images/oralno-zdravlje-4.jpeg"
+                  alt="Program 1"
+                  onclick="openModal();currentSlide(3)"
+                />
+              </div>
+              <div class="col-md-4">
+                <img
+                  src="./assets/images/oralno-zdravlje-5.jpeg"
+                  alt="Program 1"
+                  onclick="openModal();currentSlide(4)"
+                />
+              </div>
+              <!-- <div class="col-md-4">
+                <img
+                  src="./assets/images/pomoc-licima-6.jpeg"
+                  alt="Program 1"
+                />
+              </div>
+              <div class="col-md-4">
+                <img
+                  src="./assets/images/pomoc-licima-7.jpeg"
+                  alt="Program 1"
+                />
+              </div>
+              <div class="col-md-4">
+                <img
+                  src="./assets/images/pomoc-licima-8.jpeg"
+                  alt="Program 1"
+                />
+              </div>
+              <div class="col-md-4">
+                <img
+                  src="./assets/images/pomoc-licima-9.jpeg"
+                  alt="Program 1"
+                />
+              </div> -->
+            </div>
+          </div>
+        </div>
+        <div class="col-md-5">
+          <div class="recent-programs">
+            <h3>Ostali Projekti</h3>
+            <ul>
+              <li>
+                <a href="program1.html">
+                  <img
+                    src="./assets/images/hirursko-sivanje-1.jpeg"
+                    alt="Program 2"
+                  />
+
+                  <span>MEDICINSKE EDUKACIJE </span>
+                </a>
+              </li>
+              <li>
+                <a href="program3.html">
+                  <img
+                    src="./assets/images/pomoc-licima-3.jpeg"
+                    alt="Program 3"
+                  />
+                  <span>HUMANITARNE AKCIJE </span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal -->
+    <div id="myModal" class="modal">
+      <span class="close cursor" onclick="closeModal()">&times;</span>
+      <div class="modal-content">
+        <div class="mySlides">
+          <div class="numbertext">1 / 4</div>
+          <img
+            src="./assets/images/oralno-zdravlje-2.jpeg"
+            style="width: 100%"
+          />
+        </div>
+
+        <div class="mySlides">
+          <div class="numbertext">2 / 4</div>
+          <img
+            src="./assets/images/oralno-zdravlje-3.jpeg"
+            style="width: 100%"
+          />
+        </div>
+
+        <div class="mySlides">
+          <div class="numbertext">3 / 4</div>
+          <img
+            src="./assets/images/oralno-zdravlje-4.jpeg"
+            style="width: 100%"
+          />
+        </div>
+
+        <div class="mySlides">
+          <div class="numbertext">4 / 4</div>
+          <img
+            src="./assets/images/oralno-zdravlje-5.jpeg"
+            style="width: 100%"
+          />
+        </div>
+
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+        <div class="other-imgs">
+          <div class="column">
+            <img
+              class="demo cursor"
+              src="./assets/images/oralno-zdravlje-2.jpeg"
+              style="width: 100%"
+              onclick="currentSlide(1)"
+            />
+          </div>
+          <div class="column">
+            <img
+              class="demo cursor"
+              src="./assets/images/oralno-zdravlje-3.jpeg"
+              style="width: 100%"
+              onclick="currentSlide(2)"
+            />
+          </div>
+          <div class="column">
+            <img
+              class="demo cursor"
+              src="./assets/images/oralno-zdravlje-4.jpeg"
+              style="width: 100%"
+              onclick="currentSlide(3)"
+            />
+          </div>
+          <div class="column">
+            <img
+              class="demo cursor"
+              src="./assets/images/oralno-zdravlje-5.jpeg"
+              style="width: 100%"
+              onclick="currentSlide(4)"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- COPYRIGHT -->
+    <div class="copyright">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <p>HUMANITARNA <span>&copy; 2021.</span> All Rights Reserved.</p>
+          </div>
+          <div class="col-md-6 text-end">
+            <p><a class="aboc" href="https://a-boc.com/">ABOC</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- BOOTSTRAP JS -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- FONTAWESOME -->
+    <script
+      src="https://kit.fontawesome.com/4dd2b4255f.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- CUSTOM JS -->
+    <script src="./assets/js/main.js"></script>
+
+    <script src="./assets/js/modal.js"></script>
+  </body>
+</html>

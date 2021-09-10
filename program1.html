@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>POMOĆ STARIJIM LICIMA</title>
+    <title>MEDICINSKE EDUKACIJE</title>
 
     <!-- BOOTSTRAP CSS -->
     <link
@@ -22,8 +22,10 @@
     <div class="container">
       <nav class="navbar navbar-expand-lg navbar-light">
         <div class="container-fluid">
-          <a class="navbar-brand" href="/">HUMANITARNA</a>
-          <button
+          <a class="navbar-brand" href="/">
+            <img src="./assets/images/logo.png" alt="Logo" width="250"
+          /></a>
+          <!-- <button
             class="navbar-toggler"
             type="button"
             data-bs-toggle="collapse"
@@ -33,16 +35,11 @@
             aria-label="Toggle navigation"
           >
             <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          </button> -->
+          <!--<div class="collapse navbar-collapse" id="navbarSupportedContent">
+             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a
-                  class="nav-link"
-                  aria-current="page"
-                  href="#carouselExampleControls"
-                  >Home</a
-                >
+                <a class="nav-link" aria-current="page" href="/">Home</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#about-us">About Us</a>
@@ -55,88 +52,180 @@
               <li class="nav-item">
                 <a class="nav-link" href="#our-programs">Our Programs</a>
               </li>
-            </ul>
-            <span class="navbar-text">
-              <i class="fas fa-phone-alt"></i>
-              <a href="tel: 000000000000"> 000000000000 </a>
-            </span>
-          </div>
+            </ul> -->
+          <span class="navbar-text">
+            <i class="fas fa-phone-alt"></i>
+            <a href="tel: +38762810018"> +387 62 810 018 </a>
+          </span>
+          <!-- </div> -->
         </div>
       </nav>
     </div>
 
     <!-- HERO -->
-    <div class="hero">
+    <div class="hero edukacija">
       <div class="hero-text">
-        <h1 style="font-size: 50px">Pomoć Starijim Licima</h1>
+        <h1 style="font-size: 50px">MEDICINSKE EDUKACIJE</h1>
       </div>
     </div>
 
     <!-- CONTENT -->
     <div class="container">
       <div class="row">
-        <div class="col-md-8">
+        <div class="col-md-7">
           <div class="program-img">
-            <img src="./assets/images/program1.jpg" alt="Program 1" />
+            <img
+              src="./assets/images/hirursko-sivanje-1.jpeg"
+              alt="Program 1"
+            />
           </div>
           <div class="program-text">
-            The Northwest Arkansas Children’s Shelter (NWACS) is a private,
-            non-profit organization that provides 24-hour residential, emergency
-            triage care for children throughout Arkansas who are victims of
-            abandonment, abuse or neglect.With support from the Walton Family
-            Foundation, Rogue Trails LLC recently completed trail construction
-            at the Northwest Arkansas Children’s Shelter that includes
-            accessible mountain bike trails and a skills course for children who
-            find themselves in need of a safe haven.The NWACS Staff has
-            identified a significant need for quality, teen and adult sized
-            mountain bikes for their older children to have the opportunity to
-            experience the trails. For those that know the mental and physical
-            benefits associated with trail riding, helping gift the mountain
-            bike experience to these kids is something our community must
-            deliver on. There will be no flashy photos. No testimonies or
-            stories.
-
-            <br />
-            <br />
-
-            They are partnering together to help raise $6500 towards the
-            purchase of a permanent fleet of quality Trek Marlin 6 mountain
-            bikes (12 total), tubes, and accessories from Phat Tire Bike Shop
-            for the Northwest Arkansas Children’s Shelter.
+            Naše udruženje u saradnji sa organizacijom “Bohemsa” redovno održava
+            radionice na temu “ Osnovni hirurškog šivanja” za studente
+            medicinskog fakulteta. Učesnici kursa su naši studenti te studenti
+            na razmjeni iz različitih zemalja svijeta.
+            <br /><br />
+            Cilj: Upoznavanje studenata sa osnovnim tehnikama hirurškog šivanja.
+            <br /><br />
+            Rezultati: Nakon završenog kursa studenti su uspješno savladali
+            teoretski i praktični dio (pojedinačni - jednostavni pojedinačni
+            šavovi; okomiti madracni šavovi; šav osmice; jednostavan produžni,
+            tekući, intradermalni šavovi; ) radionice.
           </div>
 
           <div class="program-imgs">
             <div class="row">
               <div class="col-md-4">
-                <img src="./assets/images/program1.jpg" alt="Program 1" />
+                <img
+                  src="./assets/images/hirursko-sivanje-2.jpeg"
+                  alt="Program 1"
+                  onclick="openModal();currentSlide(1)"
+                />
               </div>
               <div class="col-md-4">
-                <img src="./assets/images/program2.jpg" alt="Program 2" />
+                <img
+                  src="./assets/images/hirursko-sivanje-3.jpeg"
+                  alt="Program 1"
+                  onclick="openModal();currentSlide(2)"
+                />
               </div>
               <div class="col-md-4">
-                <img src="./assets/images/program3.jpg" alt="Program 3" />
+                <img
+                  src="./assets/images/hirursko-sivanje-4.jpeg"
+                  alt="Program 1"
+                  onclick="openModal();currentSlide(3)"
+                />
+              </div>
+              <div class="col-md-4">
+                <img
+                  src="./assets/images/hirursko-sivanje-5.jpeg"
+                  alt="Program 1"
+                  onclick="openModal();currentSlide(4)"
+                />
               </div>
             </div>
           </div>
         </div>
-        <div class="col-md-4">
+        <div class="col-md-5">
           <div class="recent-programs">
-            <h3>Recent Programs</h3>
+            <h3>Ostali Projekti</h3>
             <ul>
               <li>
-                <a href="#">
-                  <img src="./assets/images/program2.jpg" alt="Program 2" />
+                <a href="program2.html">
+                  <img
+                    src="./assets/images/oralno-zdravlje-1.jpeg"
+                    alt="Program 2"
+                  />
 
-                  <span>RADIONICE HIRURŠKOG ŠIVANJA</span>
+                  <span>ORALNO ZDRAVLJE</span>
                 </a>
               </li>
               <li>
-                <a href="#">
-                  <img src="./assets/images/program3.jpg" alt="Program 3" />
-                  <span>RADIONICA ORALNOG ZDRAVLJA</span>
+                <a href="program3.html">
+                  <img
+                    src="./assets/images/pomoc-licima-3.jpeg"
+                    alt="Program 3"
+                  />
+                  <span>HUMANITARNE AKCIJE</span>
                 </a>
               </li>
             </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal -->
+    <div id="myModal" class="modal">
+      <span class="close cursor" onclick="closeModal()">&times;</span>
+      <div class="modal-content">
+        <div class="mySlides">
+          <div class="numbertext">1 / 4</div>
+          <img
+            src="./assets/images/hirursko-sivanje-2.jpeg"
+            style="width: 100%"
+          />
+        </div>
+
+        <div class="mySlides">
+          <div class="numbertext">2 / 4</div>
+          <img
+            src="./assets/images/hirursko-sivanje-3.jpeg"
+            style="width: 100%"
+          />
+        </div>
+
+        <div class="mySlides">
+          <div class="numbertext">3 / 4</div>
+          <img
+            src="./assets/images/hirursko-sivanje-4.jpeg"
+            style="width: 100%"
+          />
+        </div>
+
+        <div class="mySlides">
+          <div class="numbertext">4 / 4</div>
+          <img
+            src="./assets/images/hirursko-sivanje-5.jpeg"
+            style="width: 100%"
+          />
+        </div>
+
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+        <div class="other-imgs">
+          <div class="column">
+            <img
+              class="demo cursor"
+              src="./assets/images/hirursko-sivanje-2.jpeg"
+              style="width: 100%"
+              onclick="currentSlide(1)"
+            />
+          </div>
+          <div class="column">
+            <img
+              class="demo cursor"
+              src="./assets/images/hirursko-sivanje-3.jpeg"
+              style="width: 100%"
+              onclick="currentSlide(2)"
+            />
+          </div>
+          <div class="column">
+            <img
+              class="demo cursor"
+              src="./assets/images/hirursko-sivanje-4.jpeg"
+              style="width: 100%"
+              onclick="currentSlide(3)"
+            />
+          </div>
+          <div class="column">
+            <img
+              class="demo cursor"
+              src="./assets/images/hirursko-sivanje-5.jpeg"
+              style="width: 100%"
+              onclick="currentSlide(4)"
+            />
           </div>
         </div>
       </div>
@@ -171,5 +260,6 @@
 
     <!-- CUSTOM JS -->
     <script src="./assets/js/main.js"></script>
+    <script src="./assets/js/modal.js"></script>
   </body>
 </html>

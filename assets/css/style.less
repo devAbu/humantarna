@@ -16,6 +16,11 @@ nav {
     li {
       margin: 0 0.5em;
       font-weight: 600;
+      color: black !important;
+
+      a {
+        color: black !important;
+      }
     }
   }
 
@@ -59,7 +64,7 @@ nav {
     background-image: none;
 
     .fa-4x {
-      color: gray;
+      color: #21444a;
     }
   }
 }
@@ -84,12 +89,14 @@ nav {
   h2 {
     font-size: 3em;
     margin: 1.25rem 0;
-    font-weight: 700;
+    font-weight: 900;
+    color: #21444a;
     text-shadow: 4px 4px 6px rgba(150, 150, 150, 1);
   }
 
   p {
-    color: lighten(#000000, 40%);
+    color: black;
+    font-weight: 900;
   }
 }
 
@@ -115,6 +122,7 @@ nav {
     font-weight: 700;
     font-size: 3em;
     text-shadow: 4px 4px 6px rgba(150, 150, 150, 1);
+    color: #2a626b;
   }
 
   .box {
@@ -122,32 +130,36 @@ nav {
     padding: 1em;
 
     h3 {
-      color: #ff9f0d;
-      font-weight: 600;
+      color: darken(#2a626b, 15%);
+      font-weight: 900;
     }
 
     p {
-      color: lighten(#000000, 40%);
+      color: black;
+      font-weight: 900;
 
       i {
         margin-right: 0.35em;
+        color: #2a626b;
       }
 
       a {
         text-decoration: none;
-        color: lighten(#000000, 40%);
+        color: black;
+        font-weight: 900;
       }
     }
   }
 }
 
 #our-programs {
-  margin: 5em auto;
+  margin: 2em auto;
   text-align: center;
 
   .col-md-12 {
     h2 {
-      font-weight: 700;
+      color: #2a626b;
+      font-weight: 900;
       font-size: 3em;
       text-shadow: 4px 4px 6px rgba(150, 150, 150, 1);
     }
@@ -155,7 +167,8 @@ nav {
     p {
       width: 50%;
       margin: 0 auto;
-      color: lighten(#000000, 40%);
+      color: black;
+      font-weight: 900;
     }
   }
 
@@ -174,18 +187,28 @@ nav {
 
     img {
       border-radius: 0 15% 0 15%;
+      height: 35vh;
     }
 
     h5 {
-      color: #ff9f0d;
-      font-weight: 600;
+      color: #2a626b;
+      font-weight: 900;
       text-shadow: 4px 4px 6px rgba(150, 150, 150, 1);
     }
 
     p {
       width: 80%;
       margin: 1em auto;
-      color: lighten(#000000, 40%);
+      color: black;
+      font-weight: 900;
+    }
+
+    a {
+      &.btn-warning {
+        background: #2a626b;
+        border: #2a626b;
+        color: white;
+      }
     }
   }
 }
@@ -226,18 +249,16 @@ nav {
   padding-bottom: 0;
 
   span {
-    color: rgb(153, 130, 0);
+    color: #2a626b;
   }
 
   .aboc {
     text-decoration: none;
-    color: rgb(153, 130, 0);
+    color: #2a626b;
   }
 }
 
 .hero {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url("../images/program1-bg.jpg");
   height: 45vh;
   background-position: center;
   background-repeat: no-repeat;
@@ -246,6 +267,21 @@ nav {
   display: flex;
   align-items: center;
   justify-content: center;
+
+  &.edukacija {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      url("../images/cover-za-edukaciju.jpeg");
+  }
+
+  &.starije {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      url("../images/cover-za-starije.jpeg");
+  }
+
+  &.oralno {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      url("../images/cover-za-oralno.jpeg");
+  }
 
   .hero-text {
     text-align: center;
@@ -262,14 +298,15 @@ nav {
 
       img {
         width: 100%;
-        height: 55vh;
+        height: 65vh;
         border-radius: 0 10% 0 10%;
       }
     }
 
     .program-text {
       line-height: 25px;
-      color: lighten(#000000, 40%);
+      color: black;
+      font-weight: 900;
       margin-bottom: 2em;
     }
 
@@ -279,6 +316,8 @@ nav {
 
         img {
           width: 100%;
+          height: 125px;
+          margin-bottom: 1em;
         }
       }
     }
@@ -287,13 +326,13 @@ nav {
       position: -webkit-sticky;
       position: sticky;
       top: 0;
-      background-color: lighten(#000000, 80%);
+      background-color: #82deecd4;
       border-radius: 0 10% 0 10%;
       padding: 1.5em;
 
       h3 {
         font-size: 1.5em;
-        font-weight: 600;
+        font-weight: 900;
         margin-bottom: 1.5em;
       }
 
@@ -310,6 +349,7 @@ nav {
             display: flex;
             align-items: center;
             justify-content: space-between;
+            font-weight: 900;
 
             img {
               height: 80px;
@@ -320,6 +360,129 @@ nav {
         }
       }
     }
+  }
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 65%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.85);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.other-imgs {
+  display: flex;
+  justify-content: space-between;
+
+  .column {
+    width: 100%;
+  }
+
+  img {
+    height: 150px;
+    width: 100%;
+  }
+}
+
+/* Modal Content */
+.modal-content {
+  position: relative;
+  background-color: transparent;
+  margin: auto;
+  padding: 0;
+  width: 90%;
+  max-width: 1200px;
+}
+
+/* The Close Button */
+.close {
+  color: white;
+  position: absolute;
+  top: 10px;
+  right: 25px;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #999;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.mySlides {
+  display: none;
+
+  img {
+    height: 55vh;
+    margin-bottom: 1em;
+  }
+}
+
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+img {
+  margin-bottom: -4px;
+}
+
+.demo {
+  opacity: 1;
+
+  .active,
+  &:hover {
+    transform: scale(1.1);
+    opacity: 1;
   }
 }
 
@@ -366,4 +529,11 @@ nav {
       }
     }
   }
+}
+
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-top: none;
 }
