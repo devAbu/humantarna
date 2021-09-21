@@ -176,6 +176,40 @@ nav span a {
   border: #2a626b;
   color: white;
 }
+div {
+  text-align: center;
+}
+div h2 {
+  font-weight: 900;
+  color: #2a626b;
+  font-size: 3em;
+  text-shadow: 4px 4px 6px #969696;
+}
+#saradnici {
+  background-image: url(../images/partners.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-color: #2a626b;
+  padding: 2em 5em;
+}
+#saradnici .row {
+  background: #a2a3be42;
+  box-shadow: 0 0.5em 1em 0 rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+}
+#saradnici .row .logos {
+  display: flex;
+  flex-wrap: wrap;
+}
+#saradnici .row .logos div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#saradnici .row .logos div img {
+  width: 35%;
+}
 /* FOOTER */
 /* footer {
   background: #fafafa;
@@ -232,6 +266,7 @@ nav span a {
 }
 .hero.starije {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/cover-za-starije.jpeg");
+  background-position: unset;
 }
 .hero.oralno {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/cover-za-oralno.jpeg");
@@ -243,6 +278,11 @@ nav span a {
 }
 .container .row {
   padding: 2em;
+}
+.container .row .program-title h1 {
+  font-weight: 900;
+  color: #2a626b;
+  text-shadow: 4px 4px 6px #969696;
 }
 .container .row .program-img {
   margin-bottom: 1em;
@@ -295,7 +335,7 @@ nav span a {
   font-weight: 900;
 }
 .container .row .recent-programs ul li a img {
-  height: 80px;
+  height: 85px;
   max-width: 80px;
   border-radius: 50%;
 }
@@ -307,7 +347,7 @@ nav span a {
   left: 0;
   top: 0;
   width: 65%;
-  height: 100%;
+  height: 80%;
   overflow: auto;
   background-color: rgba(0, 0, 0, 0.85);
   top: 50%;
@@ -406,12 +446,18 @@ img {
   opacity: 1;
 }
 @media only screen and (max-width: 768px) {
+  nav .navbar-brand img {
+    width: 100px;
+  }
   .carousel .container .row h1 {
     font-size: 2em;
   }
   .carousel-control-next-icon .fa-4x,
   .carousel-control-prev-icon .fa-4x {
     font-size: 2em;
+  }
+  #about-us {
+    padding: 0;
   }
   #about-us h2 {
     font-size: 2em;
@@ -425,13 +471,22 @@ img {
   #volunteers-positions img {
     width: initial;
   }
+  #our-programs {
+    padding: 0;
+  }
   #our-programs .col-md-12 h2 {
     font-size: 2em;
   }
-}
-.tabcontent {
-  display: none;
-  padding: 6px 12px;
-  border: 1px solid #ccc;
-  border-top: none;
+  .copyright {
+    padding: 0;
+  }
+  .container .row {
+    padding: 0.5em;
+  }
+  .modal {
+    width: 85%;
+  }
+  #saradnici {
+    padding: 2;
+  }
 }
