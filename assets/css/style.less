@@ -225,11 +225,11 @@ div {
 }
 
 #saradnici {
-  background-image: url(../images/partners.jpg);
+  /* background-image: url(../images/partners.jpg); */
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  background-color: #2a626b;
+  background-color: #71aeb8;
   padding: 2em 5em;
 
   .row {
@@ -238,7 +238,6 @@ div {
     border-radius: 5px;
     .logos {
       display: flex;
-      flex-wrap: wrap;
 
       div {
         display: flex;
@@ -363,6 +362,10 @@ div {
     .program-imgs {
       .row {
         padding: 0;
+
+        .img {
+          width: 25%;
+        }
 
         img {
           width: 100%;
@@ -606,5 +609,23 @@ img {
 
   #saradnici {
     padding: 2;
+  }
+
+  .hero {
+    &.starije {
+      background-position: center;
+    }
+  }
+
+  #saradnici {
+    .row {
+      .logos {
+        div {
+          img {
+            width: 85%;
+          }
+        }
+      }
+    }
   }
 }
