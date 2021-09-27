@@ -497,4 +497,7 @@ img {
   #saradnici .row .logos div img {
     width: 85%;
   }
+  div h2 {
+    font-size: 2em;
+  }
 }
